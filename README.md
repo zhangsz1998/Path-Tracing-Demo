@@ -81,11 +81,10 @@ BVH的查询同样涉及到递归的操作，这里我借鉴了实例代码中�
 games101_cow()函数负责读取两个obj文件。
 
 ### 纹理映射
-纹理信息在material.py文件中进行定义，读取的纹理图片以ti.field的形式作为全局变量。sphere.py与triangle.py中的get_uc()函数负责计算给定点的纹理坐标，
+纹理信息在material.py文件中进行定义，读取的纹理图片以ti.field的形式作为全局变量。sphere.py与triangle.py中的get_uv()函数负责计算给定点的纹理坐标，
 material.py中的get_texture_value()函数用于查询相应纹理坐标的颜色信息。
 
 ## 参考资料
 * [tachi-ray-tracing](https://github.com/taichiCourse01/taichi_ray_tracing)
 * [GAMES101](https://sites.cs.ucsb.edu/~lingqi/teaching/games101.html)
 * [Ray Tracing in One Weekend系列](https://github.com/RayTracing/raytracing.github.io)
-
